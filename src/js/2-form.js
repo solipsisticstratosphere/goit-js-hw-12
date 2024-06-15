@@ -42,7 +42,7 @@ function handlerSent(evt) {
   } else {
     console.log(formdata);
     localStorage.clear();
-    form.reset();
+
     formdata = { email: '', message: '' };
     form.reset();
   }
