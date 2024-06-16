@@ -37,7 +37,7 @@ function checkData() {
 
 function handlerSent(evt) {
   evt.preventDefault();
-  if (formdata.email_user == '' || formdata.message_user == '') {
+  if (email.value == '' || message.value == '') {
     alert('Fill please all fields');
   } else {
     console.log(formdata);
