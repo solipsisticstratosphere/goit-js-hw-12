@@ -176,3 +176,97 @@ input[name='state'] {
 .button-submit-timer:disabled {
   background: #cfcfcf;
 }
+
+input[name='search'] {
+  border-radius: 4px;
+  width: 272px;
+  height: 30px;
+}
+.form-search {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.button-search {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  border-color: transparent;
+}
+.card {
+  border: 1px solid #808080;
+  width: 360px;
+  height: 200px;
+  flex-basis: calc((100% - 3 * 27px) / 4);
+}
+.description {
+  gap: 27px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.description > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.description > li > a {
+  display: flex;
+
+  justify-content: center;
+}
+.search-pic {
+  width: 360px;
+  height: 152px;
+}
+.search-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Сдвиг для точного центрирования */
+  background: linear-gradient(0deg, rgba(255, 61, 0, 0.2) 33%, #ff3d00 100%);
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #263238;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

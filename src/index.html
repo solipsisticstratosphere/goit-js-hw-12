@@ -11,12 +11,14 @@
     <load ="partials/header.html" />
 
     <section>
-      <li class="nav-item">
-        <a href="./1-timer.html" class="nav-link">Page 2</a>
-      </li>
-      <li class="nav-item">
-        <a href="./2-snackbar.html" class="nav-link">Page 3</a>
-      </li>
+      <form class="form-search">
+        <label class="radio-input">
+          <input type="text" name="search" required />
+        </label>
+
+        <button type="submit" class="button-search">Search</button>
+      </form>
+      <ul class="search-list"></ul>
     </section>
 
     <script type="module" src="./main.js"></script>
