@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
-
+    <div id="header"></div>
     <section>
       <form class="form-search">
         <label class="radio-input">
           <input type="text" name="search" required />
         </label>
-
         <button type="submit" class="button-search">Search</button>
       </form>
       <ul class="search-list"></ul>
+      <div class="load-more-container">
+        <button class="load-more hidden">Load more</button>
+      </div>
+      <span class="loader hidden"></span>
     </section>
 
     <script type="module" src="./main.js"></script>

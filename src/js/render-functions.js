@@ -4,11 +4,11 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 export const renderImages = (data, list) => {
   const markup = data.hits
     .map(pic => {
-      return `<li class="card">
+      return `<li class="card gallery-item">
         <a href="${pic.largeImageURL}"><img
           src="${pic.webformatURL}"
           alt="${pic.tags}"
-          class="search-pic"
+          class="search-pic gallery-image"
         />
         </a>
         <ul class="description">
@@ -22,6 +22,10 @@ export const renderImages = (data, list) => {
     .join('');
 
   list.insertAdjacentHTML('beforeend', markup);
+  console.log(
+    'Images added to list:',
+    list.querySelectorAll('.gallery-item').length
+  );
 
   let gallery_x = new SimpleLightbox('.search-list a', {
     captionsData: 'alt',
