@@ -249,9 +249,9 @@ input[name='search'] {
   background: linear-gradient(0deg, rgba(255, 61, 0, 0.2) 33%, #ff3d00 100%);
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
-  visibility: hidden; /* Изначально скрываем лоадер */
-  opacity: 0; /* Устанавливаем непрозрачность в 0 */
-  transition: visibility 0s, opacity 0.5s linear; /* Плавный переход */
+  visibility: hidden;  
+  opacity: 0; 
+  transition: visibility 0s, opacity 0.5s linear; 
 }
 
 .loader::after {
